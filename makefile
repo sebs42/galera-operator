@@ -8,17 +8,17 @@ default: push
 TAG=`git describe --tags`
 DATE=`date +%FT%T%z`
 GITSHA=`git rev-parse HEAD`
-PREFIX=
-CODE_GEN=v0.15.9
+#PREFIX=
+#CODE_GEN=v0.15.9
 
 # Testing
-TESTING_NAMESPACE=
-TESTING_DB_IMAGE_START=
-TESTING_DB_IMAGE_UPGRADE=
-TESTING_S3_ACCESS_KEY_ID=
-TESTING_S3_SECRET_ACCESS_KEY=
-TESTING_S3_ENDPOINT=
-TESTING_S3_BUCKET=
+#TESTING_NAMESPACE=
+#TESTING_DB_IMAGE_START=
+#TESTING_DB_IMAGE_UPGRADE=
+#TESTING_S3_ACCESS_KEY_ID=
+#TESTING_S3_SECRET_ACCESS_KEY=
+#TESTING_S3_ENDPOINT=
+#TESTING_S3_BUCKET=
 
 # API
 API_VERSION=v1beta2
@@ -51,7 +51,7 @@ clean:
 clonegen:
 	git clone -b $(CODE_GEN) https://github.com/kubernetes/code-generator ./vendor/k8s.io/code-generator
 
-codegen: clean
+codegen:
 	./hack/update-codegen.sh
 	rm ./pkg/client/listers/apigalera/$(API_VERSION)/expansion_generated.go
 

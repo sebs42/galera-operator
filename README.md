@@ -19,7 +19,7 @@ Please read the full documentation in `./doc/user` to view all features.
 
 ## 30 000 ft view
 
-![galera operation design overview](https://raw.githubusercontent.com/Orange-OpenSource/galera-operator/master/doc/images/galera.png)
+![galera operation design overview](https://raw.githubusercontent.com/Orange-OpenSource/galera-operator/master/doc/images/overview.png)
 
 ## Requirements
 * Kubernetes 1.12+
@@ -29,8 +29,6 @@ Please read the full documentation in `./doc/user` to view all features.
 Note: Operator image provided for example purpose are build for Kubernetes 1.15+. If you want to use it on an older Kubernetes you need to rebuild the image
 
 ## Features
-
-![galera operation design overview](https://raw.githubusercontent.com/Orange-OpenSource/galera-operator/master/doc/images/overview.png)
 
 ### Deploy Galera Operator
 
